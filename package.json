@@ -1,0 +1,25 @@
+{
+    "name": "evil",
+    "displayName": "Evil",
+    "description": "Adds support for EVIL syntax highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "evil",
+            "aliases": ["Evil", "evil"],
+            "extensions": [".vil"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "evil",
+            "scopeName": "main.vil",
+            "path": "./syntaxes/evil.tmLanguage.json"
+        }]
+    }
+}
